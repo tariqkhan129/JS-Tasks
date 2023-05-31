@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        nav {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            color: #4ece68;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            background-color: #150b22;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        img {
+            width: 250px;
+            object-fit: cover;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Go Back to Home Page</a>
+    </nav>
+    <h1>Queston # 04 : Create a web page with an image and a button. When the button is clicked, change the image to a
+        different one.</h1>
+    <img src="second.jpg" alt="" id="img">
+
+    <br>
+    <button onclick="change()">Change Image</button>
+
+    <script>
+        function change() {
+            var Image_Id = document.getElementById('img');
+            if (Image_Id.src.match("second.jpg")) {
+                Image_Id.src = "first.jpg";
+            }
+            else {
+                Image_Id.src = "second.jpg";
+            }
+        }
+        // .................... Method 2 ......................
+        // var changeButton = document.getElementById("changeButton");
+        // var myImage = document.getElementById("myImage");
+        // changeButton.addEventListener("click", function () {
+        //     myImage.src = "downloaded.jpg";
+        // });
+
+    </script>
+</body>
+
+</html>

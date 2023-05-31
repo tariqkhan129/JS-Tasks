@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+   nav {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+    
+    nav a:hover {
+      color: #4ece68;
+    }
+        button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 18px;
+                text-align: center;
+                color: #fff;
+                background-color: #150b22;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+               
+            }
+
+        input {
+            width: 400px;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: normal;
+            margin-right: 20px;
+        }
+
+        .display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Go Back to Home Page</a>
+      </nav>
+      <h1> Question # 03 : Create a web page with a text box and a button. When the button is clicked, display an alert box with the text that was entered in the text box.</h1>
+
+    <div class="display">
+        <input type="text" id="input" placeholder="Enter Text Here">
+        <button onclick="alerting()">Show Alert</button>
+    </div>
+    <script>
+        var input = document.getElementById('input')
+        function alerting() {
+            if (input.value != "") {
+                alert(input.value)
+            }
+            else {
+                alert("Enter some text to be display")
+            }
+        }
+
+    // ............ Another Way to do the same task ...........
+    // var alertButton = document.getElementById("alertButton");
+    // var myInput = document.getElementById("myInput");
+
+    // alertButton.addEventListener("click", function() {
+    //   var inputText = myInput.value;
+    //   if (inputText !== "") {
+    //     alert(inputText);
+    //   }
+    // });
+
+    </script>
+</body>
+
+</html>

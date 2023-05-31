@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        nav {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+    
+    nav a:hover {
+      color: #4ece68;
+    }
+        button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 18px;
+                text-align: center;
+                color: #fff;
+                background-color: #150b22;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+               
+            }
+     
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Go Back to Home Page</a>
+      </nav>
+      <h1>Question # 05 :Create a web page with a button that, when clicked, displays a random quote from a list of quotes</h1>
+    <div class="div">
+    <h1 id="qoute">Qoute</h1>
+
+    <button onclick="location.reload()">Next Qoute</button>
+    
+    </div>
+    <script>
+       var rand = Math.round(Math.random() * 5)
+        var qoute = ["Coding is the art of giving life to digital dreams and turning imagination into reality.", "In the world of coding, every bug is an opportunity to learn and improve.", "Coding is like playing a puzzle game where you have the power to create your own challenges and solutions.", "Coding is a language that empowers you to communicate with machines and bring your ideas to life.", "The best coders are those who see errors as stepping stones towards innovation.", "Coding is the closest thing we have to magic in the digital realm, where lines of code can shape the world around us."]
+        function genQoute() {
+            document.getElementById('qoute').innerHTML = qoute[rand] 
+        }
+        genQoute()
+    </script>
+
+<!-- <h1>Random Quote</h1>
+<div class="quote-container">
+  <p class="quote-text" id="quoteText"></p>
+  <p class="quote-author" id="quoteAuthor"></p>
+</div>
+<button class="quote-button" id="quoteButton">Show Quote</button>
+
+<script>
+  var quotes = [
+    { text: "The greatest glory in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela" },
+    { text: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
+    { text: "If life were predictable it would cease to be life, and be without flavor.", author: "Eleanor Roosevelt" },
+  ];
+  var quoteButton = document.getElementById("quoteButton");
+  var quoteText = document.getElementById("quoteText");
+  var quoteAuthor = document.getElementById("quoteAuthor");
+
+  quoteButton.addEventListener("click", function() {
+    var randomIndex = Math.floor(Math.random() * quotes.length);
+    var randomQuote = quotes[randomIndex];
+    quoteText.textContent = randomQuote.text;
+    quoteAuthor.textContent = "- " + randomQuote.author;
+  });
+</script> -->
+
+</body>
+
+</html>

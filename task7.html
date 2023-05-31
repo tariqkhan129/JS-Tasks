@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+       nav {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+    
+    nav a:hover {
+      color: #4ece68;
+    }
+        button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 18px;
+                text-align: center;
+                color: #fff;
+                background-color: #150b22;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+               
+            }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Go Back to Home Page</a>
+      </nav>
+     <h1>Question # 07 : Create a web page with a button that, when clicked, displays the current date and time in an alert box.</h1> 
+    <button onclick="alert(new Date().toLocaleString())">Click To Show Date and Time</button>
+    <button onclick="alert(new Date().getHours())">Click To Show Hours</button>
+    <button onclick="alert(new Date().getMinutes())">Click To Show Minutes</button>
+    <button onclick="alert(new Date().getDay())">Click To Show Day </button>
+
+     <!-- .............. Method 2 ..................... -->
+    <!-- <script>
+      var dateButton = document.getElementById("dateButton");
+  
+      dateButton.addEventListener("click", function() {
+        var currentDate = new Date();
+        var dateTime = currentDate.toLocaleString();
+        alert("Current Date and Time: " + dateTime);
+      });
+    </script> -->
+</body>
+
+</html>
